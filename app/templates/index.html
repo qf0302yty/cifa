@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>词法分析器</title>
+	<link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../static/css/index.css" />
+	<link rel="stylesheet" href="../static/css/font-awesome.min.css" />
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	<div class="top0">&nbsp;<i class="icon-magic">&nbsp;</i>词法分析器</div>
+	<div class="top " style="background: url('../static/top.jpg') no-repeat;background-size:100%;">
+		<div class="top2">
+			<div class="top3">
+				<p class="p1">词法分析器</p>
+				<hr>
+				<p class="p2">lexical analyzer</p>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<br>
+		<!-- <ul id="myTab" class="nav nav-tabs">
+			<li class="active">
+				<a href="#place" data-toggle="tab">
+					选地方
+				</a>
+			</li>
+			<li>
+				<a href="#restaurant" data-toggle="tab">
+					选餐馆
+				</a>
+			</li>
+		</ul> -->
+		<div class="title-block">
+			<span class="blue-block">&nbsp;&nbsp;</span>&nbsp;操作
+		</div>
+		<div class="center">
+	    <form action="upload" method="post" enctype="multipart/form-data" >
+			<!--<span class="col-xs-1" style="margin-top:3px">源代码：</span>-->
+			<input type="file" name="source" class="col-xs-3" style="padding:0"/>
+			<button id="randomPlaceButton" type="submit">上传文件</button>
+		</form>
+		<hr>
+		<form action="" method="post">
+			<button type="submit" class="btn btn-primary">开始分析</button></div>
+		<div style="width:92%;margin:auto">
+			<div class="col-xs-4" style="padding:0">
+				<div class="title-block2">
+					<span class="blue-block">&nbsp;&nbsp;</span>&nbsp;源代码
+				</div>
+				<br>
+				<textarea wrap="off" spellcheck="false" class="textarea form-control" name="r_text">{{all_the_text}}</textarea>
+			</div>
+			</form>
+			<div class="col-xs-4" style="padding:0">
+				<div class="title-block3">
+					<span class="blue-block">&nbsp;&nbsp;</span>&nbsp;token序列
+				</div>
+				<br>
+				<div style="overflow-y:scroll; height:400px;">
+				<table class="table table-block table-striped">
+					<thead>
+						<tr>
+							<th width="30%">种别</th>
+							<th width="70%">值</th>
+						</tr>	
+					</thead>
+					<tbody>
+						{{r_char_message|safe}}
+
+					</tbody>
+				</table>
+				</div>
+			</div>
+			<div class="col-xs-4" style="padding:0">
+				<div class="title-block4">
+					<span class="blue-block">&nbsp;&nbsp;</span>&nbsp;错误信息
+				</div>
+				<br>
+				<div style="overflow-y:scroll; height:400px;">
+				<table class="table table-block2 table-striped">
+					<thead>
+						<tr>
+							<th width="30%">行号</th>
+							<th width="70%">内容</th>
+						</tr>	
+					</thead>
+					<tbody>
+						{{r_error_message|safe}}
+					</tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<p id="p1">Powered by Lynn Young</p>
+		<p id="p3">BootStrap | JQuery | Python | Flask</p>
+	</div>
+	<script src="../static/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body
+{
+
+}
+.top0
+{
+	height:50px;
+	background: #363636;
+	color:#ffffff;
+	line-height: 50px;
+	font-size: 20px;
+}
+.top
+{
+	height:245px;
+	
+}
+.top2
+{
+	height:100%;
+	background: rgba(0,0,0,0.4);
+	color:#ffffff;
+	font-family: "等线";
+}
+.p1
+{
+	font-size: 40px;
+	font-family:'微软雅黑';
+}
+.p2
+{
+	font-size:20px;
+	font-family:'Segoe Script';
+}
+.top3
+{
+	width:60%;
+	margin-left: auto;
+	margin-right:auto;
+	padding-top: 70px;
+}
+.main
+{
+	min-height:700px;
+}
+ul
+{
+	width:95%;
+	margin-left: auto;
+	margin-right:auto;
+}
+.center
+{
+	width:90%;
+	margin-left: auto;
+	margin-right:auto;
+	padding-top: 30px;
+	padding-bottom:30px;
+}
+.btn
+{
+
+}
+.blue-block{
+	background: #4876FF;
+}
+.title-block{
+	border-bottom:1px solid;
+	width:92%;
+	margin:auto;
+	font-size:1.5vw;
+}
+.title-block2{
+	border-bottom:1px solid;
+	width:95%;
+	margin-left:0;
+	font-size:1.5vw;
+	padding:0;
+}
+.title-block3{
+	border-bottom:1px solid;
+	width:95%;
+	margin:auto;
+	font-size:1.5vw;
+	padding:0;
+}
+.title-block4{
+	border-bottom:1px solid;
+	width:95%;
+	margin-right:0;
+	margin-left:auto;
+	font-size:1.5vw;
+	padding:0;
+}
+.textarea{
+	width:95%;
+	margin-left:0;
+	min-height: 400px;
+	overflow-y:scroll;
+	overflow-x:scroll;
+
+}
+.table-block{
+	width:95%;
+	margin:auto;
+}
+.table-block2{
+	width:95%;
+	margin-right:0;
+	margin-left:auto;
+}
+.table-block td{
+	text-align: center;
+}
+.table-block th{
+	text-align: center;
+}
+.table-block2 td{
+	text-align: center;
+}
+.table-block2 th{
+	text-align: center;
+}
+.bottom
+{
+	background-color: #363636;
+	width:100%;
+	text-align:center;
+	color:#fff;
+	margin-bottom: -10px;
+	padding-bottom: 5px;
+	padding-top: 8px;
+}
